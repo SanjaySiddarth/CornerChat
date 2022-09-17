@@ -1,0 +1,10 @@
+V1
+[] Add semantic UI
+[] Build Login screen
+[] Build Chat screen
+[] WebSocket Backend for messages
+[] Style frontend
+
+
+Nice to haves
+[] Integrations
