@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+
+.main-content {
+  height: 30vw;
+}
+
+.col1 {
+  background-color: blue;
+}
+
+.col3 {
+  background-color: yellow;
+}
+
+.col4 {
+  background-color: pink;
+}
+
+.col5 {
+  background-color: pink;
+}
+
+.col6 {
+  background-color: pink;
+}
+
+.col7 {
+  background-color: pink;
+}
+
+.main-container {
+  background-color: aqua;
+  display: flex;
+  width: 70vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first-row {
+  margin-top: 5rem;
+  height: 10vw;
+}
+
+.nav-bar {
+  height: 7rem;
+}
