@@ -17,6 +17,9 @@
 .main-content {
   height: 30vw;
 }
+.logo {
+  padding-top: 2.5rem;
+}
 
 .col1 {
   background-color: blue;
@@ -57,4 +60,36 @@
 
 .nav-bar {
   height: 7rem;
+}
+
+.card.chat-box-element {
+  width: 100%;
+  height: 100%;
+}
+.ui.items > .item > .image > img {
+  width: 50%;
+}
+
+.ui.items > .item > .content > .header:not(.ui) {
+  font-size: 0.95rem;
+}
+
+.ui.items > .item > .content p:last-child {
+  margin-top: -10px;
+}
+
+.ui.items > .item > .image + .content {
+  margin-left: -3em;
+}
+
+.content.group-name {
+  flex-grow: 0 !important;
+}
+
+.content.chat-content {
+  flex-grow: 3;
+}
+
+.ui.input.send-message {
+  width: 100%;
 }
