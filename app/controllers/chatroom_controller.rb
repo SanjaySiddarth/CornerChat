@@ -1,7 +1,7 @@
 class ChatroomController < ApplicationController
 
     def index
-        user = User.second
+        user = User.find_by(username: session[:user])
         @messages = user.messages
     end
 

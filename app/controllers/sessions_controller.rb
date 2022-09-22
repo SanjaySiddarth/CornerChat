@@ -1,7 +1,17 @@
 class SessionsController < ApplicationController
 
     def login
-        @messages = Message.first(4)
+        
     end
     
+    def create
+        session[:user] = params[:username]
+        redirect_to chat_path
+    end
+
+    private
+        def permit
+            params.permit(:username)
+        end
+
 end
