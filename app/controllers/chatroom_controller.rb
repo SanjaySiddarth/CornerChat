@@ -1,8 +1,14 @@
 class ChatroomController < ApplicationController
-
+    include LoginHelper
+    
     def index
-        user = User.find_by(username: session[:user])
-        @messages = user.messages
+        
+        if is_logged_in?
+            @messages = Message.last(4)
+        else
+            redirect_to root_path
+        end
+
     end
 
 end
