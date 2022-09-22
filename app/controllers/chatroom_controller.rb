@@ -1,6 +1,6 @@
 class ChatroomController < ApplicationController
 
-    def chatroom
+    def index
         user = User.second
         @messages = user.messages
     end

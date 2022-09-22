@@ -91,5 +91,8 @@
 }
 
 .ui.input.send-message {
-  width: 10;
+  width: 100%;
+}
+.ui.placeholder.segment {
+  width: 100%;
 }
