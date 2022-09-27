@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'chat', to: 'chatroom#index'
   post 'login', to: 'sessions#create'
   post 'send_message', to: 'message#create_message'
+  get 'logout', to: 'sessions#logout'
 end
