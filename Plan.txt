@@ -6,5 +6,24 @@ V1
 [] Style frontend
 
 
+Chatroom controller
+[x] Restrict access to chatroom without logging index
+[] Flash error message if not logged and accessing chatroom
+
+
+Chatroom
+[] Add column for images when creating a user logging index
+[] Make chat overflow
+
+sessions
+[] BUG: Able to go to chat page with null user
+    - Happening cuz I'm not validating user presence in login screen
+[] Destroy session on tab close
+[] Add logout button
+
+messages
+[] Add validation to message
+
+
 Nice to haves
 [] Integrations

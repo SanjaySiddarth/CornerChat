@@ -66,10 +66,19 @@
         </div>
         <div class="extra content">
           <div class="ui action input send-message">
-            <input type="text" placeholder="Search..." />
+            <%# <input type="text" placeholder="Search..." />
             <button class="ui icon button">
               <i class="search icon"></i>
-            </button>
+            </button> %>
+            <%= form_with url: "/send_message", method: :post do |form| %>
+              <%# <%= form.label :message_input, "Search for:" %>
+              <%= form.text_field :message_input %>
+              <button class="ui icon button">
+              <%= form.submit %>
+              <i class="search icon"></i>
+              </button>
+            <% end %>
+
           </div>
         </div>
       </div>
