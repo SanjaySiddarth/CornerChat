@@ -24,6 +24,11 @@ sessions
 messages
 [] Add validation to message
 
+Users
+[] change user table to include path to profile pic
+[] Add profile pics to Users
+
+
 
 Nice to haves
 [] Integrations

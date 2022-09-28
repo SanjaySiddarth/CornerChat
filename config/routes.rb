@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   post 'send_message', to: 'message#create_message'
   get 'logout', to: 'sessions#logout'
+
+  mount ActionCable.server, at: '/cable'
 end

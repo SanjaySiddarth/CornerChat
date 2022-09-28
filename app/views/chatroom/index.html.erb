@@ -58,7 +58,7 @@
         </div>
         <div class="content chat-content">
           <h4 class="ui horizontal divider header">Today</h4>
-          <div class="ui small feed">
+          <div class="ui small feed" id="message-container">
           
             <%= render @messages %>  
 
@@ -70,7 +70,7 @@
             <button class="ui icon button">
               <i class="search icon"></i>
             </button> %>
-            <%= form_with url: "/send_message", method: :post do |form| %>
+            <%= form_with url: "/send_message", remote: true, method: :post do |form| %>
               <%# <%= form.label :message_input, "Search for:" %>
               <%= form.text_field :message_input %>
               <button class="ui icon button">
