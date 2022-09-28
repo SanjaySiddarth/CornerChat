@@ -20,18 +20,23 @@
                 <input type="text" placeholder="Alias" />
                 <i class="user icon"></i>
               </div>
-              <%= form_with url: "/login", method: :post do |form| %> 
-              <%= form.label :username, "Choose your Alias:" %>
+              <%= form_with url: "/login", method: :post do |form| %> <%=
+              form.label :username, "Choose your Alias:" %>
               <div class="ui left icon input">
                 <%= form.text_field :username %>
                 <i class="user icon"></i>
               </div>
               <div class="ui blue submit button">
-              <%= form.submit "Chat!" %> 
+                <%= form.submit "Chat!" %>
               </div>
               <% end %>
             </div>
             <div class="ui blue submit button">Chat</div>
+            <% flash.each do |type, msg| %>
+              <div class="ui negative message">
+                <div class="header"><%= msg %></div>
+              </div>
+            <% end %>
           </div>
         </div>
         <div class="middle aligned column">

@@ -96,3 +96,11 @@
 .ui.placeholder.segment {
   width: 100%;
 }
+
+.chat-content {
+  overflow: auto;
+}
+
+.ui.negative.message .header {
+  text-align: center;
+}
